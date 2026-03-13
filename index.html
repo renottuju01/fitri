@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Selamat Idul Fitri</title>
+
+</style>
+<div><ul><img src="https://cdn2.cdnstep.com/PunYPLQ9QGA2Q8QvZVRn/0-1.thumb128.png" class="foto">
+
+<style>
+.foto{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+}
+</style></ul>
+<!-- Font -->
+<div><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#0f9b8e,#38ef7d);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.card{
+    background:rgba(12, 77, 163, 0.366);
+    padding:40px;
+    border-radius:40px;
+    backdrop-filter:blur(10px);
+}
+
+h1{
+    font-size:33px;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1>🌙SELAMAT HARI RAYA🌙<br>Idul Fitri</h1>
+<p style="text-transform: uppercase;">Taqabbalallahu minna wa minkum
+<br>
+Mohon maaf lahir dan batin</p> 
+
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+// Confetti otomatis saat halaman dibuka
+function startConfetti(){
+    var duration = 5 * 1000;
+    var end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 5,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 }
+        });
+
+        confetti({
+            particleCount: 5,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}window.onload = startConfetti;
+</script></div>
+</html>
